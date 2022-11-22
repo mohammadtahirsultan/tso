@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portfo<span>lio</span></a>
+        <div class="menutoggle" onclick="togglemenu();"></div>
+        <ul class="navigation">
+            <li><a href="#banner" onclick="togglemenu();">Home</a></li>
+            <li><a href="#about" onclick="togglemenu();">About</a></li>
+            <li><a href="#menu" onclick="togglemenu();">Services</a></li>
+            <li><a href="#skills" onclick="togglemenu();">Skills</a></li>
+            <!-- <li><a href="#testimonials" onclick="togglemenu();">Testimonials</a></li> -->
+            <li><a href="#contact" onclick="togglemenu();">Contact</a></li>
+        </ul>
+    </header>
+    
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Hello My Name is</h2>
+            <h1>Mohammad Tahir</h1>
+            <h3>And I'm a <span>MERN Web Developer</span></h3>
+            <a href="#" class="btn">Hire Me</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        
+        <div class="title">
+            <h2 class="titletext">About <span>M</span>e</h2>
+            <p>know about me</p>
+
+        </div>
+        <div class="row">
+            <div class="col50">
+                <p>Am a Full Stack MERN WEB Developer.I have done many Web DEvelopment Projects in my 2 Years Experice . I love to Code.
+                </p>
+            </div>
+            <div class="col50">
+                <div class="imgbx">
+                    <img src="blueshirt.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="menu" id="menu">
+        <div class="title">
+            <h2 class="titletext">My<span> S</span>ervices</h2>
+            <p>what i can do</p>
+
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgbx">
+                    <img src="seo.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Front End Development</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbx">
+                    <img src="web.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Backend Development</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbx">
+                    <img src="dev.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Full Stack Development</h3>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="container3" id="skills">
+            <div class="title">
+                <h2 class="titletext">My<span> S</span>kills</h2>
+                <p>experties</p>
+    
+            </div>
+            <div class="content">
+                <!-- <div class="para">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptate magni dolorem sequi modi corrupti quos ducimus fugiat inventore dolorum. Accusamus, quas. Mollitia illo porro dolor dolorum! Minima, eum perferendis?</p>
+                    <a href="#">Read more</a>
+                </div> -->
+                <div class="bars">
+                  
+                    <li><span class="per">80%</span>
+                        <h3>React JS</h3><span class="bar"><span class="css"></span></span>
+                    </li>
+                    <li><span class="per">80%</span>
+                        <h3>Node JS</h3><span class="bar"><span class="css"></span></span>
+                    </li>
+                    <li><span class="per">80%</span>
+                        <h3>Mongo DB</h3><span class="bar"><span class="css"></span></span>
+                    </li>
+                    <li><span class="per">80%</span>
+                        <h3>Git & Github</h3><span class="bar"><span class="css"></span></span>
+                    </li>
+                    <li><span class="per">40%</span>
+                        <h3>JavaScript</h3><span class="bar"><span class="jquery"></span></span>
+                    </li>
+                </div>
+            </div>
+        </section>
+        <section class="container4" id="contact">
+            <div class="title">
+                <h2 class="titletext">Contact <span>M</span>e</h2>
+                <p>connect with me</p>
+    
+            </div>
+            <div class="block1">
+                <input type="text" placeholder="Enter Your Name"><br>
+                <input type="text" placeholder="Input Your E-mail"><br>
+                <input type="text" placeholder="Type Your Message"><br>
+                <button>SUBMIT</button>
+            </div>
+        </section>
+    <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var header =document.querySelector("header");
+            header.classList.toggle("sticky",window.scrollY > 0);
+        });
+        function togglemenu(){
+            const menutoggle = document.querySelector('.menutoggle');
+            menutoggle.classList.toggle('active');
+            const navigation = document.querySelector('.navigation');
+            navigation.classList.toggle('active');
+
+        };
+        
+    </script>
+</body>
+</html>
